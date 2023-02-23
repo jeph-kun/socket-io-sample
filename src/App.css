@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Itim&family=Rancho&family=Shadows+Into+Light&display=swap');
+
+.creation-card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/background/sky.png');
+  background-size: cover;
+  position: relative;
+}
+
+.cloud{
+  background-image: url('./images/background/clouds_1.png');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.avatar-list {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px 0px;
+}
+
+.avatar-list > img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.avatar-list > img:hover {
+  transform: scale(1.2);
+}
+
+.selected-avatar {
+  border: 4px solid #ffdf53;
+  border-radius: 100%;
+}
+
+.love-birds {
+  position: absolute;
+  width: 100px;
+  margin-top: -95px;
+
+
+}
+
+.home {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #D8E6F8;
+}
+
+.retro-containers {
+  padding: 100px 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.retro-items {
+  width: 100%;
+  height: auto;
+  padding: 25px 20px 40px 20px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  align-self: flex-start;
+
+}
+
+.retro-items > h3 {
+  font-family: "Shadows Into Light";
+  font-size: 40px;
+}
+
+.color-green {
+  color: #1EB749;
+}
+
+.color-blue {
+  color: #1E65B7;
+
+}
+
+.color-yellow {
+  color: #DEB830;
+}
+
+.pincard-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.post-card {
+  padding: 18px;
+  margin-top: 20px;
+  font-family: "Comic Neue";
+  border-radius: 10px;
+
+}
+
+.post-card-green {
+  background-color: #D1F9DC;
+}
+
+.post-card-blue {
+  background-color: #D1E8F9;
+}
+
+.post-card-yellow {
+  background-color: #F9F0D1;
+}
+
+.post-card-content {
+   display: flex;
+   text-align: left;
+   gap: 10px;
+}
+
+.post-card-content > img {
+  width: 35px;
+  height: 35px
+}
+
+.post-card-content > span {
+  padding-top: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: default;
+}
+
+.post-color-green {
+  color: rgb(51, 116, 45);
+} 
+
+.post-color-blue {
+  color: rgb(45, 68, 116);
+
+}
+
+.post-color-yellow {
+  color: rgb(116, 99, 45);
+}
+
+.post-card-footer {
+  margin-top: 20px;
+  padding-top: 20px 10px 0px 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-card-footer-green {
+  border-top: 1px solid #97DFAB;
+}
+
+.post-card-footer-blue {
+  border-top: 1px solid #97CEDF;
+}
+
+.post-card-footer-yellow {
+  border-top: 1px solid #DFD897;
+}
+
+.react-info {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 10px 0px 10px;
+  gap: 5px;
+
+}
+
+.react-info > img {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.react-info > img:hover {
+  transform: scale(1.2);
+}
+.react-info > span {
+  font-size: 14px;
+  color: #7D7D7D;
+}
+
+
