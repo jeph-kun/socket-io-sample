@@ -24,20 +24,6 @@ const buttoncolor = {
 }
 
 const PostField = styled(TextField)(({ colorvariation }) => ({
-    // '& .MuiInput-underline:after': {
-    //     borderBottomColor: 'green',
-    //   },
-    //   '& .MuiOutlinedInput-root': {
-    //     '& fieldset': {
-    //       borderRadius: "10px", borderWidth: "2px", fontFamily: "Comic Neue", borderColor: "#1fb7f8",
-    //     },
-    //     '&:hover fieldset': {
-    //       borderRadius: "10px", borderWidth: "2px", borderColor: "#1fb7f8"
-    //     },
-    //     '&.Mui-focused fieldset': {
-    //       borderRadius: "10px", borderWidth: "3px", fontFamily: "Comic Neue", borderColor: "#1fb7f8"
-    //     },
-    // }
        '& .MuiOutlinedInput-root': {
          padding: "0px",
          '& textarea': {
@@ -67,6 +53,8 @@ const PinCard = ({colorVariation, placeholder, triggerPin}) => {
 
    const [post, setPinpost] = useState("")
 
+   
+
    const ButtonStyle = {
        borderRadius: "10px", 
        height: "50px;", 
@@ -81,17 +69,16 @@ const PinCard = ({colorVariation, placeholder, triggerPin}) => {
 
 
    const handlePostChange = (value) => {
-      console.log(value)
       setPinpost(value)
    }
 
    const handlePinOnclick = () => {
-      console.log("ss")
       triggerPin(post)
+      setPinpost('')
    }
   return (
     <div>
-        <PostField multiline fullWidth onChange={(event) => handlePostChange(event.target.value)} placeholder={placeholder} colorvariation={colorVariation}/>
+        <PostField value={post} multiline fullWidth onChange={(event) => handlePostChange(event.target.value)} placeholder={placeholder} colorvariation={colorVariation}/>
         <div className='pincard-btn'>
             <Button variant="contained" sx={ButtonStyle} startIcon={<img width={20} height={21} src={Thumbtacks}/>} onClick={handlePinOnclick}>
                 Pin

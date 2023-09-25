@@ -12,8 +12,6 @@ import { alpha, styled } from '@mui/material/styles';
 import birds from "../images/assets/love-birds.png"
 
 
-import socketIOClient from "socket.io-client";
-const socket = socketIOClient("http://localhost:5000");
 
 
 const avatars = ['cat', 'dog', 'puffer-fish', 'rabbit']
@@ -45,7 +43,7 @@ const ButtonStyle = {
   
 
 
-const CreateUserCard = ({triggerUserRegistered}) => {
+const CreateUserCard = ({triggerUserRegistered, socket}) => {
   
   const [selectedAvatar, setSelectedAvatar] = useState("")
   const [name, setName] = useState("")
